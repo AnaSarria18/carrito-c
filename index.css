@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f793e9;
+}
+
+/* Aplica diseño flexbox y estilos a los contenedores principales y sus hijos. */
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  flex-wrap: wrap;
+}
+
+
+/* Aplica diseño flexbox y estilos a los contenedores principales y sus hijos. */
+.product-gallery, .shopping-cart {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ade9fc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+.product-gallery h2, .shopping-cart h2 {
+    text-align: center;
+}
+
+
+/* Establece estilos para los productos individuales y los elementos del carrito. */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fd51b0;
+    color: #0f0e0e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #e9ebec;
+}
+
+/* Establece estilos  para los productos individuales y los elementos del carrito. */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item button {
+    background-color: #eebebe;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.cart-item button:hover {
+    background-color: #42fafa;
+}

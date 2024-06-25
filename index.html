@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Productos</title>
+   <link rel="stylesheet" href="./index.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header class="text-center	mt-12 text-3xl	">
+        <h1 class="">BIENVENIDOS A LA GALERIA DE PRODUCTOS "COSMI-ASEOS"</h1>
+    </header>
+
+    <main class="container ">
+        <section class="product-gallery  ">
+            <h2 class="text-black text-2xl">Galería de Productos</h2>
+            <article id="products" class="grid grid-cols-4 gap-4"></article> <!-- Selecciona el elemento con el id="products", que es donde se insertarán los productos. -->
+        </section>
+        <section class="shopping-cart">
+            <h2 class="text-black text-2xl" >Carrito de Compras</h2>
+            <article id="cart-items"></article> <!-- Selecciona el contenedor de elementos del carrito de compras. -->
+            <p class="text-black text-2xl" >Total: $<span id="total-price">0</span></p> <!-- Selecciona el elemento donde se mostrará el precio total del carrito. -->
+        </section>
+    </main>
+
+  <script src="carrito.js"></script>
+</body>
+</html>
